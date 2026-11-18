@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Workout Log</title>
   <style>
-    * { box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #f1f5f9; margin: 0; padding: 20px; color: #1e293b; }
+        * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #ffe4ec; margin: 0; padding: 20px; color: #5a1033; }
     .container { max-width: 700px; margin: 0 auto; }
-    h1 { text-align: center; }
-    .card { background: #fff; border-radius: 10px; padding: 18px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+    h1 { text-align: center; color: #ad1457; }
+    .card { background: #fff; border: 1px solid #f8bbd0; border-radius: 12px; padding: 18px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(194,24,91,.12); }
     .row { display: flex; gap: 10px; }
     .row > * { flex: 1; }
-    label { display: block; font-size: 13px; margin-bottom: 4px; color: #475569; }
-    input, textarea { width: 100%; padding: 9px; margin-bottom: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: inherit; font-size: 14px; }
-    button { padding: 8px 14px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; color: #fff; }
-    .primary { background: #2563eb; }
-    .gray { background: #64748b; }
-    .red { background: #dc2626; }
-    .stats { text-align: center; color: #64748b; margin-bottom: 10px; }
+    label { display: block; font-size: 13px; margin-bottom: 4px; color: #880e4f; }
+    input, textarea { width: 100%; padding: 9px; margin-bottom: 10px; border: 1px solid #f48fb1; border-radius: 8px; font-family: inherit; font-size: 14px; background: #fff8fa; }
+    input:focus, textarea:focus { outline: none; border-color: #c2185b; box-shadow: 0 0 0 2px #f8bbd0; }
+    button { padding: 8px 14px; border: none; border-radius: 8px; cursor: pointer; font-size: 13px; color: #fff; }
+    .primary { background: #c2185b; }
+    .gray { background: #ec407a; }
+    .red { background: #880e4f; }
+    .stats { text-align: center; color: #ad1457; margin-bottom: 10px; }
     .workout { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
-    .workout .title { font-weight: bold; font-size: 16px; }
-    .workout .meta { color: #475569; font-size: 14px; margin-top: 4px; }
-    .workout small { color: #64748b; display: block; margin-top: 4px; }
+    .workout .title { font-weight: bold; font-size: 16px; color: #ad1457; }
+    .workout .meta { color: #880e4f; font-size: 14px; margin-top: 4px; }
+    .workout small { color: #b0607f; display: block; margin-top: 4px; }
     .actions { display: flex; gap: 6px; }
-    .empty { text-align: center; color: #64748b; }
-    .error { background: #fee2e2; color: #991b1b; padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; display: none; }
+    .empty { text-align: center; color: #ad1457; }
+    .error { background: #fde2e4; color: #880e4f; padding: 8px 12px; border-radius: 8px; margin-bottom: 10px; display: none; }
   </style>
 </head>
 <body>
